@@ -8,6 +8,6 @@ The source code for the website has been made public, the code might look messy 
 
 > You can report glitches or bugs in this repo 
 
-# [Visit the Website](klevrbio.rf.gd)
+# [Visit the Website](http://klevrbio.rf.gd/index.php)
 
 
