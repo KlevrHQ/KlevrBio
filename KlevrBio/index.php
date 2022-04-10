@@ -28,9 +28,9 @@ $row = mysqli_fetch_array($result);
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="generator" content="Mobirise v5.5.8, mobirise.com">
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
-  <link rel="shortcut icon" href="assets/images/sae-121x121.png" type="image/x-icon">
   <meta name="description" content="">
-  
+  <link rel="shortcut icon" href="assets/images/sae-121x121.png" type="image/x-icon">
+
   
   <title>Home</title>
   <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
@@ -76,11 +76,15 @@ background-size: cover;"></div>
                     echo '<p>Already have an account? <a href="login.php">Login</a> </p>';
                 }
                 else{
-                  echo '<h4 class="mbr-section-title mbr-fonts-style align-center mb-5">Welcome Back '; echo $row["First Name"]; echo '! </h4>
+                  echo '<h4 class="mbr-section-title mbr-fonts-style align-center mb-5">Welcome '; echo $row["First Name"]; echo '! </h4>
                   ';
                     echo '<a class="btn btn-primary display-4" href="account.php">DashBoard</a>';
-                    echo '<a class="btn btn-danger display-4" href="logout.php">Logout</a>';
                     echo '<a class="btn btn-success display-4" href="post.php?username='; echo $name; echo '">View Your Portfolio</a>';
+                    
+    echo '<br><a href="https://github.com/KlevrHQ/KlevrBio" class="btn btn-dark">View us on Github</a>';
+
+                    echo '<a class="btn btn-dark display-4" href="logs.php'; echo '">Check Changelogs</a>';
+                    echo '<br><a class="btn btn-danger display-4" href="logout.php">Logout</a>';
 
                 }
                 ?>

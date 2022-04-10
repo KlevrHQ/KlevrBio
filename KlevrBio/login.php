@@ -32,6 +32,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
 
         $_SESSION['img'] = $row['img'];
         $_SESSION['Languages'] = $row['Languages'];
+        $_SESSION['skills'] = $row['skills'];
         header('location: index.php'); 
       }
       else{
@@ -61,6 +62,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="shortcut icon" href="assets/images/sae-121x121.png" type="image/x-icon">
 
     <title>Login</title>
   </head>

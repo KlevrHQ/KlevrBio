@@ -32,7 +32,8 @@ $username = $_GET['username'];
   <link rel="preload" href="https://fonts.googleapis.com/css?family=Jost:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Jost:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap"></noscript>
   <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css"><link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
-  
+  <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+ 
   
     <!-- Required meta tags -->
    
@@ -79,23 +80,41 @@ background-size: cover;">
 
             
             <div class="col-sm-6 col-lg-4">
-                <div class="card-wrap">
+                <div class="card-wrap" style="opacity: 1">
                     <center>
+                      <br>
+
                     <div class="image-wrap">
-                        <img src=<?php echo $row["img"]?>>
+                        <img src=<?php echo $row["img"]?> style="border-radius: 50%; object-fit: cover;
+                        width:230px;
+                        height:230px;
+                        border: 3px solid blue;
+                        ">
                     </div>
                     </center>
                     <div class="content-wrap">
+                    <hr>
+
                         <h5 class="mbr-section-title card-title mbr-fonts-style align-center m-0 display-5">
                             <strong ><?php echo $row["First Name"]." ".$row["Last Name"] ?></strong>
                         </h5>
 
-  
+                    <h5 class="align-center">
+                      <?php echo $row["Icons"] ?>
+                    </h5>  
 
-                        
+                        <br>
                         <p class="card-text mbr-fonts-style align-center display-7">
                         <?php echo $row['bio'] ?>
                         </p>
+                        <br>
+                        <p class="card-text mbr-fonts-style align-center display-7">
+                          <b  class="fas fa-tools"></b>
+                          <b> Skills</b>
+                          <br>  
+                          <?php echo $row["skills"] ?>
+                        </p>
+                        <br>
                         <p class="card-text mbr-fonts-style align-center display-7">
                           <b  class="fas fa-laptop"></b>
                           <b> Languages</b>

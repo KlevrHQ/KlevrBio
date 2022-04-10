@@ -25,7 +25,8 @@ $row = mysqli_fetch_array($result);
 <html  >
 <head>
   <!-- Site made with Mobirise Website Builder v5.5.8, https://mobirise.com -->
-  
+  <link rel="shortcut icon" href="assets/images/sae-121x121.png" type="image/x-icon">
+
 </head>
 <body>
 <?php require "partials/_nav.php"; ?>

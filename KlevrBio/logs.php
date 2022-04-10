@@ -34,11 +34,12 @@ if(!isset($_SESSION['loggedin']) || $_SESSION['loggedin']!=true){
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="assets/images/sae-121x121.png" type="image/x-icon">
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
-    <title>Logs - KlevrHub</title>
+    <title>Logs</title>
   </head>
   <body>
   <?php require "partials/_nav.php"; ?>
@@ -50,9 +51,43 @@ if(!isset($_SESSION['loggedin']) || $_SESSION['loggedin']!=true){
 
     
     <div class="container">
+
         <div class="row justify-content-center">
             <div class="card col-md-12 col-lg-10">
+              
             <h1>Developer Logs</h1>
+            <div class="card-wrapper">
+                    <div class="card-box align-left">
+                        <h4 class="card-title mbr-fonts-style mbr-white mb-3 display-5">
+                            <strong>10/04/22</strong></h4>
+                        <p class="mbr-text mbr-fonts-style display-7">
+                         Today's updates
+                         <br>
+                         -> Now you won't see <b>.php</b> in the urls
+                         <br>
+                        -> Updated homepage
+                        <br>
+                        -> Made the site open source
+                        <br>
+                        -> The site will get its official SSL certificate in a few days yay!
+                        <br>
+                        -> Added a new <b>Skills</b> field
+                        <br>
+                        -> Added icons to profiles
+                        <br>
+                        -> Updated the user portfolio ui
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+
+
+                          
+                        </p>
+                        
+                    </div>
+                </div>
+                <br>
             <div class="card-wrapper">
                     <div class="card-box align-left">
                         <h4 class="card-title mbr-fonts-style mbr-white mb-3 display-5">

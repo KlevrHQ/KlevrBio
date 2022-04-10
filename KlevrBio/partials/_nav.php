@@ -20,7 +20,7 @@ if($loggedin){
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
   <link rel="shortcut icon" href="assets/images/sae-121x121.png" type="image/x-icon">
   <meta name="description" content="">
-  
+
   
   <title>Home</title>
   <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
