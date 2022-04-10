@@ -53,17 +53,26 @@ if(!isset($_SESSION['loggedin']) || $_SESSION['loggedin']!=true){
         <div class="row justify-content-center">
             <div class="card col-md-12 col-lg-10">
             <h1>Developer Logs</h1>
-            <br>
-                <div class="card-wrapper">
+            <div class="card-wrapper">
                     <div class="card-box align-left">
                         <h4 class="card-title mbr-fonts-style mbr-white mb-3 display-5">
-                            <strong>06/04/22</strong></h4>
-                        <p class="mbr-text mbr-fonts-style display-7">Initial version released</p>
+                            <strong>09/04/22</strong></h4>
+                        <p class="mbr-text mbr-fonts-style display-7">
+                          Updated some more stuff:
+                          <br>
+                          -> Added an account dashboard
+                          <br>
+                          -> Tweaked some minor stuff in site UI
+                          <br>
+                          <b>-> Added a new Languages field to the Portfolio</b>
+                          <br>
+                          
+                        </p>
                         
                     </div>
                 </div>
                 <br>
-                <div class="card-wrapper">
+            <div class="card-wrapper">
                     <div class="card-box align-left">
                         <h4 class="card-title mbr-fonts-style mbr-white mb-3 display-5">
                             <strong>07/04/22</strong></h4>
@@ -80,6 +89,17 @@ if(!isset($_SESSION['loggedin']) || $_SESSION['loggedin']!=true){
                     </div>
                 </div>
                 <br>
+            <br>
+                <div class="card-wrapper">
+                    <div class="card-box align-left">
+                        <h4 class="card-title mbr-fonts-style mbr-white mb-3 display-5">
+                            <strong>06/04/22</strong></h4>
+                        <p class="mbr-text mbr-fonts-style display-7">Initial version released</p>
+                        
+                    </div>
+                </div>
+                <br>
+                
 
 <br>
 

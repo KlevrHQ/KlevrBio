@@ -16,7 +16,7 @@ $bio = $_SESSION['biog'];
 $link = $_SESSION['link'];
 $link2 = $_SESSION['link2'];
 $link3 = $_SESSION['link3'];
-
+$lan = $_SESSION['Languages'];
 if (isset($_FILES['file'])){
     $file = $_FILES['file'];
     echo $file['name'];
@@ -53,10 +53,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
   $link = $_POST['link'];
   $link2 = $_POST['link2'];
   $link3 = $_POST['link3'];
-
+  $lan = $_POST['lan'];
 // update account info
  
-  $edit = mysqli_query($conn, "UPDATE `users` SET `First Name` = '$name', `Last Name` = '$lastname', `bio` = '$bio' , `link` = '$link', `link2` = '$link2', `link3` = '$link3' WHERE `username` = '$username'");
+  $edit = mysqli_query($conn, "UPDATE `users` SET `First Name` = '$name', `Last Name` = '$lastname', `bio` = '$bio' , `link` = '$link', `link2` = '$link2', `link3` = '$link3', `Languages` = '$lan' WHERE `username` = '$username'");
   if ($edit){
     $msg = "Successfully updated the profile";
 
@@ -78,7 +78,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
   <link rel="shortcut icon" href="assets/images/sae-121x121.png" type="image/x-icon">
   <meta name="description" content="">
   
-  
+  <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+
   <title>Edit Account</title>
   <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
@@ -123,7 +124,7 @@ if ($msg){
 
             <h3 class="mbr-section-title mbr-fonts-style align-center mb-0 display-2">
               <br>
-                <strong>Edit your account</strong></h3>
+                <strong>Edit your Portfolio</strong></h3>
             
         </div>
                         
@@ -141,6 +142,10 @@ if ($msg){
                             <textarea class="form-control" id="body" name="bio" rows="10" placeholder="Enter your profile bio"><?php echo $data["bio"] ?></textarea>
 
                             </div>
+                            <div class="col-lg-12 col-md-12 col-sm-12 form-group mb-3">Languages</label>
+                                <input type="text" class="form-control" value="<?php echo $data['Languages'] ?>" id="lan" name="lan" required>
+                                <div id="passHel" class="form-text">For eg. C++, Java, PHP (Separate the languages using commas)</div>
+                              </div>
                             <div class="col-lg-12 col-md-12 col-sm-12 form-group mb-3">Link 1</label>
                                 <input type="text" class="form-control" value="<?php echo $data['link'] ?>" id="link" name="link" required>
                               </div>

@@ -28,10 +28,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
         $_SESSION['link'] = $row['link'];
         $_SESSION['link2'] = $row['link2'];
         $_SESSION['link3'] = $row['link3'];
-
+        
 
         $_SESSION['img'] = $row['img'];
-
+        $_SESSION['Languages'] = $row['Languages'];
         header('location: index.php'); 
       }
       else{

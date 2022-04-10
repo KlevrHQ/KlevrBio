@@ -15,7 +15,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
   $link = $_POST["link"];
   $link2 = $_POST["link2"];
   $link3 = $_POST["link3"];
-
+  $lan = $_POST["lan"];
   
   //$exists=false;
 
@@ -49,7 +49,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
     $exists = false;
     if (($password == $cpassword) && $exists==false){
       $hash = password_hash($password, PASSWORD_DEFAULT);
-      $sql = "INSERT INTO `users` (`username`, `First Name`, `Last Name`, `password`, `email`, `bio`, `dt`, `link`, `link2`, `link3`) VALUES ('$username', '$fname', '$lname', '$hash', '$email', '$bio', current_timestamp(), '$link', '$link2', '$link3');";
+      $sql = "INSERT INTO `users` (`username`, `First Name`, `Last Name`, `password`, `email`, `bio`, `dt`, `link`, `link2`, `link3`, `Languages`) VALUES ('$username', '$fname', '$lname', '$hash', '$email', '$bio', current_timestamp(), '$link', '$link2', '$link3', '$lan');";
       $result = mysqli_query($conn, $sql);
       if ($result){
         $showAlert = true;

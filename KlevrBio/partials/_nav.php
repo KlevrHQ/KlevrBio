@@ -78,7 +78,7 @@ if($loggedin){
                     
                     <a class="nav-link link text-black display-4" href="index.php">Home</a></li>
                     <li class="nav-item">
-                    <a class="nav-link link text-black display-4" href="account.php">Your Account</a></li>
+                    <a class="nav-link link text-black display-4" href="account.php">DashBoard</a></li>
                     
                     <li class="nav-item">
                     <a class="nav-link link text-black display-4" href="logout.php">Logout</a></li>

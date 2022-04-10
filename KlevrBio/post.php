@@ -19,7 +19,8 @@ $username = $_GET['username'];
   <meta name="description" content="">
   
   <link href="https://fonts.googleapis.com/css?family=Waiting+for+the+Sunrise" rel="stylesheet" type="text/css"/>
-
+  <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
   <title><?php $username ?></title>
   <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
@@ -40,7 +41,7 @@ $username = $_GET['username'];
 
   </head>
   
-  <body style="background-image: url('https://media.discordapp.net/attachments/825249708225462312/961286975166496798/bk1.jpg'); 
+  <body style="background-image: url('https://media.discordapp.net/attachments/825249708225462312/962306855869239336/unknown.png?width=805&height=453'); 
 background-size: 95% 95%;
 background-size: cover;">
   <br>  
@@ -60,7 +61,7 @@ background-size: cover;">
             
 
 ?>
-<section data-bs-version="5.1" class="team1 cid-sVOG0AriLQ" id="team1-r" style="background-image: url('https://media.discordapp.net/attachments/825249708225462312/961286975166496798/bk1.jpg?width=797&height=495'); 
+<section data-bs-version="5.1" class="team1 cid-sVOG0AriLQ" id="team1-r" style="background-image: url('https://media.discordapp.net/attachments/825249708225462312/962306855869239336/unknown.png?width=805&height=453'); 
 background-size: 95% 95%;
 background-size: cover;">
 
@@ -95,6 +96,12 @@ background-size: cover;">
                         <p class="card-text mbr-fonts-style align-center display-7">
                         <?php echo $row['bio'] ?>
                         </p>
+                        <p class="card-text mbr-fonts-style align-center display-7">
+                          <b  class="fas fa-laptop"></b>
+                          <b> Languages</b>
+                          <br>  
+                          <?php echo $row["Languages"] ?>
+                        </p>
                         <?php 
                         function get_domain($url)
                         {
@@ -122,11 +129,15 @@ background-size: cover;">
                     </div>
                 </div>
             </div>
-
             
+                         
+                          
         </div>
     </div>
 </section>
+<?php 
+    include "partials/portfoot.php"
+    ?>
 <br>
 
   </body>
