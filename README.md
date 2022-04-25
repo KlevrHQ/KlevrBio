@@ -1,5 +1,5 @@
 # KlevrBio
-A platform for developers to create quality portfolios easily wuth a few clicks
+A platform for developers to create quality portfolios easily with a few clicks
 
 # Open Source policy
 The source code for the website has been made public, the code might look messy or lengthy because I was learning PHP while starting this project.
